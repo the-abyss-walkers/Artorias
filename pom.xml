@@ -10,6 +10,7 @@
     <scala.version>2.11.8</scala.version>
     <spoark.version>2.4.5</spoark.version>
     <configtype.version>1.2.1</configtype.version>
+    <scala.tools.version>2.11</scala.tools.version>
     <!--test -->
     <scalatest.version>3.3.0-SNAP2</scalatest.version>
   </properties>
@@ -45,6 +46,11 @@
       <artifactId>scalatest_2.11</artifactId>
       <version>${scalatest.version}</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.rogach</groupId>
+      <artifactId>scallop_${scala.tools.version}</artifactId>
+      <version>3.1.1</version>
     </dependency>
   </dependencies>
 
